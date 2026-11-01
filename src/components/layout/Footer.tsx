@@ -81,7 +81,7 @@ export default function Footer() {
       >
         <div className="relative isolate">
           {/* BACKGROUND IMAGE: SAME IMAGE ON MOBILE AND DESKTOP */}
-          {/* <div className="absolute inset-0 z-0 overflow-hidden"> */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
             <Image
               src="/images/banner/banner-01.png"
               alt=""
@@ -90,7 +90,7 @@ export default function Footer() {
               sizes="100vw"
               className="object-cover object-[center_35%] sm:object-center"
             />
-          {/* </div> */}
+          </div>
 
           {/* DARK OVERLAY */}
           <div className="absolute inset-0 z-10 bg-[#090806]/55 sm:bg-[#090806]/75 lg:bg-[#090806]/85" />
