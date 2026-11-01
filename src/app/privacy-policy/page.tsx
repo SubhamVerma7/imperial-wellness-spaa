@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Imperial Wellness Spaa",
+  title: "Privacy Policy | Imperial Wellness Spa",
   description:
-    "Read the Privacy Policy of Imperial Wellness Spaa, Indore, and learn how we handle customer information and protect privacy.",
+    "Read the Privacy Policy of Imperial Wellness Spa, Indore, and learn how we handle customer information and protect privacy.",
 };
 
 function PolicySection({
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="relative mx-auto max-w-4xl">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#D9AD4D]">
-            Imperial Wellness Spaa
+            Imperial Wellness Spa
           </p>
 
           <h1 className="font-[var(--font-cormorant)] text-4xl font-semibold sm:text-6xl">
@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection title="1. Introduction">
             <p>
-              Imperial Wellness Spaa, located in Indore, Madhya Pradesh,
+              Imperial Wellness Spa, located in Indore, Madhya Pradesh,
               respects the privacy of visitors and customers who interact
               with our website or contact us regarding our spa services.
             </p>
@@ -167,7 +167,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection title="6. WhatsApp, Phone and Email Communication">
             <p>
-              Customers may contact Imperial Wellness Spaa using WhatsApp,
+              Customers may contact Imperial Wellness Spa using WhatsApp,
               telephone or email.
             </p>
             <p>
@@ -197,7 +197,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection title="7. Sharing of Personal Information">
             <p>
-              Imperial Wellness Spaa does not sell or rent customer personal
+              Imperial Wellness Spa does not sell or rent customer personal
               information to third parties for their independent marketing
               purposes.
             </p>
@@ -329,12 +329,12 @@ export default function PrivacyPolicyPage() {
           <PolicySection title="15. Contact Us">
             <p>
               For privacy questions, requests or concerns, please contact
-              Imperial Wellness Spaa:
+              Imperial Wellness Spa:
             </p>
 
             <div className="mt-4 space-y-3 rounded-xl border border-[#D9AD4D]/15 bg-[#090806] p-5">
               <p className="font-medium text-[#D9AD4D]">
-                Imperial Wellness Spaa
+                Imperial Wellness Spa
               </p>
               <p>
                 2nd Floor, Maharana Tower, Near Jardin Hotel, Tulsinagar,

@@ -5,9 +5,9 @@ import Link from "next/link";
 import { ArrowRight, Camera, Play } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Gallery | Imperial Wellness Spaa",
+  title: "Gallery | Imperial Wellness Spa",
   description:
-    "Explore the gallery of Imperial Wellness Spaa in Nipania, Indore. Discover our spa environment and wellness experience.",
+    "Explore the gallery of Imperial Wellness Spa in Nipania, Indore. Discover our spa environment and wellness experience.",
 };
 
 const galleryItems = [
@@ -15,7 +15,7 @@ const galleryItems = [
     id: 1,
     type: "image",
     src: "/images/gallary/image-01.jpeg",
-    alt: "Imperial Wellness Spaa gallery",
+    alt: "Imperial Wellness Spa gallery",
     title: "The Imperial Experience",
     size: "large",
   },
@@ -24,7 +24,7 @@ const galleryItems = [
     type: "video",
     src: "/images/gallary/video-01.mp4",
     poster: "/images/gallary/image-02.png",
-    alt: "Imperial Wellness Spaa video",
+    alt: "Imperial Wellness Spa video",
     title: "Experience Imperial Wellness",
     size: "normal",
   },
@@ -32,7 +32,7 @@ const galleryItems = [
     id: 3,
     type: "image",
     src: "/images/gallary/image-03.jpeg",
-    alt: "Imperial Wellness Spaa interior",
+    alt: "Imperial Wellness Spa interior",
     title: "A Space for Relaxation",
     size: "normal",
   },
@@ -40,7 +40,7 @@ const galleryItems = [
     id: 4,
     type: "image",
     src: "/images/gallary/image-02.jpeg",
-    alt: "Imperial Wellness Spaa gallery",
+    alt: "Imperial Wellness Spa gallery",
     title: "The Imperial Experience",
     size: "large",
   },
@@ -49,7 +49,7 @@ const galleryItems = [
     type: "video",
     src: "/images/gallary/video-02.mp4",
     poster: "/images/gallary/image-02.png",
-    alt: "Imperial Wellness Spaa gallery",
+    alt: "Imperial Wellness Spa gallery",
     title: "The Imperial Experience",
     size: "large",
   },
@@ -57,7 +57,7 @@ const galleryItems = [
     id: 6,
     type: "image",
     src: "/images/gallary/image-04.jpeg",
-    alt: "Imperial Wellness Spaa gallery",
+    alt: "Imperial Wellness Spa gallery",
     title: "The Imperial Experience",
     size: "large",
   },
@@ -65,7 +65,7 @@ const galleryItems = [
     id: 7,
     type: "image",
     src: "/images/gallary/image-05.jpeg",
-    alt: "Imperial Wellness Spaa gallery",
+    alt: "Imperial Wellness Spa gallery",
     title: "The Imperial Experience",
     size: "large",
   },
@@ -80,7 +80,7 @@ export default function GalleryPage() {
 
         <Image
           src="/images/banner/banner-02.png"
-          alt="Imperial Wellness Spaa"
+          alt="Imperial Wellness Spa"
           fill
           priority
           className="object-cover object-center opacity-30"
@@ -104,7 +104,7 @@ export default function GalleryPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-white/65 sm:text-base">
-            Take a glimpse into Imperial Wellness Spaa.
+            Take a glimpse into Imperial Wellness Spa.
             Explore our gallery and discover the atmosphere
             of our spa experience.
           </p>
@@ -127,7 +127,7 @@ export default function GalleryPage() {
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/55 sm:text-base">
             Every detail contributes to the experience.
             Browse our photos and video to get a closer look
-            at Imperial Wellness Spaa.
+            at Imperial Wellness Spa.
           </p>
         </div>
       </section>
@@ -217,7 +217,7 @@ export default function GalleryPage() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/60 sm:text-base">
-            Get in touch with Imperial Wellness Spaa to explore
+            Get in touch with Imperial Wellness Spa to explore
             our services and discuss your preferred appointment.
           </p>
 

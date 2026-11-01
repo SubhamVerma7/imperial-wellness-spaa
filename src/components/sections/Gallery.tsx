@@ -14,13 +14,13 @@ const gallery = [
   {
     type: "image",
     src: "/images/gallary/image-01.jpeg",
-    alt: "Imperial Wellness Spaa luxury interior",
+    alt: "Imperial Wellness Spa luxury interior",
   },
   {
     type: "video",
     src: "/images/gallary/video-01.mp4",
     poster: "/images/gallary/image-02.png",
-    alt: "Imperial Wellness Spaa relaxation experience",
+    alt: "Imperial Wellness Spa relaxation experience",
   },
   {
     type: "image",
@@ -201,7 +201,7 @@ export default function ImperialExperience() {
             </p>
 
             <h2 className="font-[var(--font-cormorant)] text-[25px] font-bold leading-tight text-[#21180F] sm:text-3xl lg:text-[36px]">
-              Why Choose Imperial Wellness Spaa
+              Why Choose Imperial Wellness Spa
             </h2>
 
             <div className="mt-2 h-[2px] w-14 rounded-full bg-[#C99B4C]" />

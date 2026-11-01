@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | Imperial Wellness Spaa",
+  title: "About Us | Imperial Wellness Spa",
   description:
-    "Discover Imperial Wellness Spaa in Nipania, Indore. Explore our approach to relaxation, massage and wellness in a comfortable spa environment.",
+    "Discover Imperial Wellness Spa in Nipania, Indore. Explore our approach to relaxation, massage and wellness in a comfortable spa environment.",
 };
 
 const services = [
@@ -67,7 +67,7 @@ export default function AboutPage() {
 
         <Image
           src="/images/banner/banner-02.png"
-          alt="Imperial Wellness Spaa"
+          alt="Imperial Wellness Spa"
           fill
           priority
           className="object-cover object-center opacity-30"
@@ -77,7 +77,7 @@ export default function AboutPage() {
 
         <div className="relative z-10 mx-auto max-w-4xl">
           <p className="mb-5 text-xs uppercase tracking-[0.4em] text-[#D9AD4D]">
-            Welcome to Imperial Wellness Spaa
+            Welcome to Imperial Wellness Spa
           </p>
 
           <h1 className="font-[var(--font-cormorant)] text-5xl font-semibold leading-tight sm:text-7xl">
@@ -111,7 +111,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
               <Image
                 src="/images/location/spa-exterior.jpeg"
-                alt="Imperial Wellness Spaa exterior"
+                alt="Imperial Wellness Spa exterior"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -120,7 +120,7 @@ export default function AboutPage() {
 
             <div className="absolute -bottom-7 left-5 rounded-xl border border-[#D9AD4D]/30 bg-[#17130F] px-6 py-4 shadow-xl sm:left-8">
               <p className="font-[var(--font-cormorant)] text-xl text-[#D9AD4D]">
-                Imperial Wellness Spaa
+                Imperial Wellness Spa
               </p>
               <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-white/55">
                 Relax · Rejuvenate · Feel the Difference
@@ -143,7 +143,7 @@ export default function AboutPage() {
 
             <div className="mt-7 space-y-5 text-sm leading-8 text-white/65 sm:text-base">
               <p>
-                Imperial Wellness Spaa is a spa destination in Nipania,
+                Imperial Wellness Spa is a spa destination in Nipania,
                 Indore, created for people who want to take a break from
                 their busy routines and dedicate time to relaxation
                 and personal care.
@@ -288,7 +288,7 @@ export default function AboutPage() {
             </p>
 
             <h2 className="font-[var(--font-cormorant)] text-4xl font-semibold sm:text-5xl">
-              Visit <span className="text-[#D9AD4D]">Imperial Wellness Spaa</span>
+              Visit <span className="text-[#D9AD4D]">Imperial Wellness Spa</span>
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/60">
@@ -377,7 +377,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/60 sm:text-base">
-            Get in touch with Imperial Wellness Spaa to explore
+            Get in touch with Imperial Wellness Spa to explore
             our services and discuss your preferred appointment.
           </p>
 

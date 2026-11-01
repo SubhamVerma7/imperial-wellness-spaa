@@ -17,7 +17,7 @@ export default function About() {
         <div className="relative min-h-[175px] overflow-hidden sm:min-h-[220px] lg:min-h-[190px]">
           <Image
             src="/images/reception/imperial_wellness_spa_reception.png"
-            alt="Imperial Wellness Spaa reception"
+            alt="Imperial Wellness Spa reception"
             fill
             priority
             sizes="(max-width: 1023px) 36vw, 46vw"
@@ -48,7 +48,7 @@ export default function About() {
   id="about-heading"
   className="mt-1 font-[var(--font-cormorant)] text-[20px] font-semibold leading-[1.05] tracking-tight text-black sm:text-2xl lg:text-3xl lg:text-[#F5D16D]"
 >
-  Imperial Wellness Spaa
+  Imperial Wellness Spa
 </h2>
 
 {/* BRAND TAGLINE */}
@@ -60,7 +60,7 @@ export default function About() {
 
 {/* DESCRIPTION */}
 <p className="mt-2 max-w-xl text-[9px] leading-[1.55] text-black sm:text-[11px] lg:mt-3 lg:text-xs lg:leading-[1.7] lg:text-white/85">
-  At Imperial Wellness Spaa, we offer a peaceful and
+  At Imperial Wellness Spa, we offer a peaceful and
   comfortable environment where you can relax,
   rejuvenate and take a break from the stresses of
   daily life. Our range of massage therapies are

@@ -5,7 +5,7 @@ import { Flower2, Sparkles, MoonStar, Zap } from "lucide-react";
 const WHATSAPP_URL =
   "https://wa.me/919407072008?text=" +
   encodeURIComponent(
-    "Hello Imperial Wellness Spaa, I would like to know more about your massage services and book an appointment.",
+    "Hello Imperial Wellness Spa, I would like to know more about your massage services and book an appointment.",
   );
 
 const benefits = [
@@ -85,7 +85,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      aria-label="Imperial Wellness Spaa introduction"
+      aria-label="Imperial Wellness Spa introduction"
       className="overflow-hidden bg-[#090806] text-white "
     >
       {/* DESKTOP HERO */}
@@ -93,7 +93,7 @@ export default function Hero() {
       <div className="relative hidden min-h-[470px] items-center lg:flex xl:min-h-[540px]">
         <Image
           src="/images/hero/spa-hero.jpg"
-          alt="Therapist providing a relaxing massage at Imperial Wellness Spaa"
+          alt="Therapist providing a relaxing massage at Imperial Wellness Spa"
           fill
           priority
           sizes="100vw"
@@ -154,7 +154,7 @@ export default function Hero() {
         <div className="relative h-[230px] overflow-hidden">
           <Image
             src="/images/hero/spa-hero.jpg"
-            alt="Relaxing massage session at Imperial Wellness Spaa"
+            alt="Relaxing massage session at Imperial Wellness Spa"
             fill
             priority
             sizes="100vw"

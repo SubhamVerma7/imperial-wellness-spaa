@@ -5,9 +5,9 @@ import Hero from "@/components/sections/Hero";
 import ReadyToRelax from "@/components/sections/ReadyToRelax";
 
 export const metadata = {
-  title: "Imperial Wellness Spaa | Luxury Massage & Wellness in Indore",
+  title: "Imperial Wellness Spa | Luxury Massage & Wellness in Indore",
   description:
-    "Experience relaxation and rejuvenation at Imperial Wellness Spaa, Indore. Explore our massage therapies and book your appointment on WhatsApp.",
+    "Experience relaxation and rejuvenation at Imperial Wellness Spa, Indore. Explore our massage therapies and book your appointment on WhatsApp.",
 };
 
 export default function Home() {

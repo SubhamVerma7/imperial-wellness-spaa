@@ -21,11 +21,11 @@ const bodyFont = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Imperial Wellness Spaa | Luxury Spa in Indore",
-    template: "%s | Imperial Wellness Spaa",
+    default: "Imperial Wellness Spa | Luxury Spa in Indore",
+    template: "%s | Imperial Wellness Spa",
   },
   description:
-    "Discover Imperial Wellness Spaa in Nipania, Indore. Explore our massage therapies and book your wellness experience.",
+    "Discover Imperial Wellness Spa in Nipania, Indore. Explore our massage therapies and book your wellness experience.",
 };
 
 export default function RootLayout({

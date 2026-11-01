@@ -10,7 +10,7 @@ import { Menu, X, Phone, MessageCircle } from "lucide-react";
 const WHATSAPP_URL =
   "https://wa.me/919407072008?text=" +
   encodeURIComponent(
-    "Hello Imperial Wellness Spaa, I would like to know more about my massage services and book an appointment."
+    "Hello Imperial Wellness Spa, I would like to know more about my massage services and book an appointment."
   );
 
 const navigation = [
@@ -43,12 +43,12 @@ export default function Header() {
           {/* DESKTOP LOGO */}
           <Link
             href="/"
-            aria-label="Imperial Wellness Spaa home"
+            aria-label="Imperial Wellness Spa home"
             className="hidden shrink-0 items-center lg:flex"
           >
             <Image
               src="/images/branding/horizontal_logo.png"
-              alt="Imperial Wellness Spaa"
+              alt="Imperial Wellness Spa"
               width={160}
               height={48}
               priority
@@ -73,13 +73,13 @@ export default function Header() {
             {/* MOBILE LOGO */}
             <Link
               href="/"
-              aria-label="Imperial Wellness Spaa home"
+              aria-label="Imperial Wellness Spa home"
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-center"
             >
               <Image
                 src="/images/branding/horizontal_logo.png"
-                alt="Imperial Wellness Spaa"
+                alt="Imperial Wellness Spa"
                 width={128}
                 height={40}
                 priority

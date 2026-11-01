@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const WHATSAPP_URL =
   "https://wa.me/919407072008?text=" +
   encodeURIComponent(
-    "Hello Imperial Wellness Spaa, I would like to book a massage session."
+    "Hello Imperial Wellness Spa, I would like to book a massage session."
   );
 
 export default function ReadyToRelax() {

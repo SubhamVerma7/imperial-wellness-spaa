@@ -16,9 +16,9 @@ import { FaFacebook } from "react-icons/fa";
 import ReadyToRelax from "@/components/sections/ReadyToRelax";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Imperial Wellness Spaa",
+  title: "Contact Us | Imperial Wellness Spa",
   description:
-    "Contact Imperial Wellness Spaa in Nipania, Indore. Get in touch for massage service enquiries, appointment requests and directions.",
+    "Contact Imperial Wellness Spa in Nipania, Indore. Get in touch for massage service enquiries, appointment requests and directions.",
 };
 
 const address =
@@ -58,7 +58,7 @@ export default function ContactPage() {
       <section className="relative flex  items-center justify-center overflow-hidden px-5 py-24 text-center ">
         <Image
           src="/images/banner/banner-02.png"
-          alt="Imperial Wellness Spaa"
+          alt="Imperial Wellness Spa"
           fill
           priority
           className="object-cover object-center opacity-30"
@@ -77,7 +77,7 @@ export default function ContactPage() {
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-white/65 sm:text-base">
             Have a question about our spa services or want to enquire about an
-            appointment? Get in touch with Imperial Wellness Spaa.
+            appointment? Get in touch with Imperial Wellness Spa.
           </p>
 
           <div className="mx-auto mt-8 h-px w-24 bg-[#D9AD4D]/60" />
@@ -214,7 +214,7 @@ export default function ContactPage() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
                 src="/images/location/spa-exterior.jpeg"
-                alt="Imperial Wellness Spaa exterior in Indore"
+                alt="Imperial Wellness Spa exterior in Indore"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 hover:scale-105"
@@ -236,7 +236,7 @@ export default function ContactPage() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/55">
-            Connect with Imperial Wellness Spaa on social media for updates,
+            Connect with Imperial Wellness Spa on social media for updates,
             photos and more.
           </p>
 
@@ -270,7 +270,7 @@ export default function ContactPage() {
 
         <div className="relative mx-auto max-w-3xl">
           <p className="mb-4 text-xs uppercase tracking-[0.3em] text-[#D9AD4D]">
-            Imperial Wellness Spaa
+            Imperial Wellness Spa
           </p>
 
           <h2 className="font-[var(--font-cormorant)] text-4xl font-semibold sm:text-6xl">

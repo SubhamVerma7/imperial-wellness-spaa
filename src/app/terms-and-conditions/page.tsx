@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Imperial Wellness Spaa",
+  title: "Terms & Conditions | Imperial Wellness Spa",
   description:
-    "Read the Terms and Conditions for using the Imperial Wellness Spaa website and spa services in Indore, Madhya Pradesh.",
+    "Read the Terms and Conditions for using the Imperial Wellness Spa website and spa services in Indore, Madhya Pradesh.",
 };
 
 function PolicySection({
@@ -48,7 +48,7 @@ export default function TermsAndConditionsPage() {
 
         <div className="relative mx-auto max-w-4xl">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#D9AD4D]">
-            Imperial Wellness Spaa
+            Imperial Wellness Spa
           </p>
 
           <h1 className="font-[var(--font-cormorant)] text-4xl font-semibold sm:text-6xl">
@@ -72,13 +72,13 @@ export default function TermsAndConditionsPage() {
 
           <PolicySection title="1. Introduction and Acceptance">
             <p>
-              Welcome to Imperial Wellness Spaa, located in Indore, Madhya
+              Welcome to Imperial Wellness Spa, located in Indore, Madhya
               Pradesh, India.
             </p>
             <p>
               These Terms & Conditions govern your access to and use of
               our website and your interactions with Imperial Wellness
-              Spaa regarding its spa and wellness services.
+              Spa regarding its spa and wellness services.
             </p>
             <p>
               By accessing or using this website, or requesting a service
@@ -91,7 +91,7 @@ export default function TermsAndConditionsPage() {
           <PolicySection title="2. Website Information">
             <p>
               This website provides general information about Imperial
-              Wellness Spaa, its location, available services and contact
+              Wellness Spa, its location, available services and contact
               details.
             </p>
             <p>
@@ -108,7 +108,7 @@ export default function TermsAndConditionsPage() {
 
           <PolicySection title="3. Spa Services">
             <p>
-              Imperial Wellness Spaa offers spa and wellness services
+              Imperial Wellness Spa offers spa and wellness services
               intended to provide relaxation and personal care. Available
               services may include the following:
             </p>
@@ -285,7 +285,7 @@ export default function TermsAndConditionsPage() {
 
           <PolicySection title="10. Hygiene, Safety and Professional Conduct">
             <p>
-              Imperial Wellness Spaa aims to maintain a clean, hygienic
+              Imperial Wellness Spa aims to maintain a clean, hygienic
               and comfortable environment for customers and staff.
             </p>
             <p>
@@ -350,7 +350,7 @@ export default function TermsAndConditionsPage() {
             <p>
               Unless otherwise stated, website text, branding, logos,
               design elements, graphics, photographs and other original
-              content associated with Imperial Wellness Spaa are
+              content associated with Imperial Wellness Spa are
               protected by applicable intellectual property laws.
             </p>
             <p>
@@ -403,7 +403,7 @@ export default function TermsAndConditionsPage() {
           <PolicySection title="16. Limitation of Liability">
             <p>
               To the extent permitted by applicable law, Imperial
-              Wellness Spaa will not be responsible for losses arising
+              Wellness Spa will not be responsible for losses arising
               solely from circumstances beyond its reasonable control,
               temporary website interruptions or misuse of third-party
               platforms.
@@ -469,7 +469,7 @@ export default function TermsAndConditionsPage() {
 
             <div className="mt-4 space-y-3 rounded-xl border border-[#D9AD4D]/15 bg-[#090806] p-5">
               <p className="font-medium text-[#D9AD4D]">
-                Imperial Wellness Spaa
+                Imperial Wellness Spa
               </p>
               <p>
                 2nd Floor, Maharana Tower, Near Jardin Hotel, Tulsinagar,

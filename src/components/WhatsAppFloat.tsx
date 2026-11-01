@@ -4,7 +4,7 @@ import Link from "next/link";
 const WHATSAPP_URL =
   "https://wa.me/919407072008?text=" +
   encodeURIComponent(
-    "Hello Imperial Wellness Spaa, I would like to know more about your massage services and book an appointment."
+    "Hello Imperial Wellness Spa, I would like to know more about your massage services and book an appointment."
   );
 
 export default function WhatsAppFloat() {
@@ -13,7 +13,7 @@ export default function WhatsAppFloat() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Contact Imperial Wellness Spaa on WhatsApp"
+      aria-label="Contact Imperial Wellness Spa on WhatsApp"
       className="fixed bottom-5 right-5 z-[9999] flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_5px_20px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:shadow-[0_8px_25px_rgba(37,211,102,0.4)] sm:bottom-7 sm:right-7 sm:size-16"
     >
       <svg
