@@ -34,7 +34,7 @@ const contacts = [
   },
   {
     icon: FaFacebook,
-    label: "Imperial Wellness Spa",
+    label: "Imperial Wellness Spaa",
     href: "https://www.facebook.com/",
   },
 ];
@@ -81,7 +81,7 @@ export default function Footer() {
       >
         <div className="relative isolate">
           {/* BACKGROUND IMAGE: SAME IMAGE ON MOBILE AND DESKTOP */}
-          <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* <div className="absolute inset-0 z-0 overflow-hidden"> */}
             <Image
               src="/images/banner/banner-01.png"
               alt=""
@@ -90,7 +90,7 @@ export default function Footer() {
               sizes="100vw"
               className="object-cover object-[center_35%] sm:object-center"
             />
-          </div>
+          {/* </div> */}
 
           {/* DARK OVERLAY */}
           <div className="absolute inset-0 z-10 bg-[#090806]/55 sm:bg-[#090806]/75 lg:bg-[#090806]/85" />
@@ -103,7 +103,7 @@ export default function Footer() {
               <div className="absolute right-0 top-0 h-[185px] w-[43%] overflow-hidden rounded-bl-[65px] border-b border-l border-[#D9AD4D]/70 sm:h-[210px] sm:w-[40%] lg:hidden">
                 <Image
                   src="/images/location/spa-exterior.jpeg"
-                  alt="Imperial Wellness Spa exterior at Maharana Tower, Indore"
+                  alt="Imperial Wellness Spaa exterior at Maharana Tower, Indore"
                   fill
                   sizes="(max-width: 1023px) 43vw"
                   className="object-cover object-center"
@@ -117,12 +117,12 @@ export default function Footer() {
                 {/* LOGO */}
                 <Link
                   href="/"
-                  aria-label="Imperial Wellness Spa home"
+                  aria-label="Imperial Wellness Spaa home"
                   className="shrink-0"
                 >
                   <Image
                     src="/images/branding/imperial-logo.png"
-                    alt="Imperial Wellness Spa"
+                    alt="Imperial Wellness Spaa"
                     width={100}
                     height={100}
                     priority
@@ -275,7 +275,7 @@ export default function Footer() {
             <div className="relative hidden min-h-[320px] overflow-hidden lg:block">
               <Image
                 src="/images/location/spa-exterior.jpeg"
-                alt="Imperial Wellness Spa at Maharana Tower, Nipania, Indore"
+                alt="Imperial Wellness Spaa at Maharana Tower, Nipania, Indore"
                 fill
                 sizes="37vw"
                 className="object-cover object-center"
@@ -319,7 +319,7 @@ export default function Footer() {
           <div className="mx-auto flex max-w-screen-2xl flex-col items-center justify-center gap-3 px-5 py-4 text-center sm:flex-row sm:justify-between sm:gap-5 sm:px-8">
             {/* COPYRIGHT */}
             <p className="text-[11px] text-white/65">
-              © 2026 Imperial Wellness Spa. All Rights Reserved.
+              © 2026 Imperial Wellness Spaa. All Rights Reserved.
             </p>
 
             {/* LEGAL LINKS */}

@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -10,11 +9,15 @@ import { Menu, X, Phone, MessageCircle } from "lucide-react";
 const WHATSAPP_URL =
   "https://wa.me/919407072008?text=" +
   encodeURIComponent(
-    "Hello Imperial Wellness Spa, I would like to know more about my massage services and book an appointment."
+    "Hello Imperial Wellness Spa, I would like to know more about my massage services and book an appointment.",
   );
 
 const navigation = [
   { label: "Home", href: "/" },
+  {
+    label: "Our Services",
+    href: "/treatments",
+  },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
@@ -36,10 +39,8 @@ export default function Header() {
   return (
     <>
       <header className="imperial-header sticky top-0 z-[100] w-full border-b border-[#D9AD4D]/50 bg-[#090806] text-white shadow-[0_4px_18px_rgba(0,0,0,0.25)]">
-
         {/* MAIN HEADER */}
         <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-10">
-
           {/* DESKTOP LOGO */}
           <Link
             href="/"
@@ -58,7 +59,6 @@ export default function Header() {
 
           {/* MOBILE HEADER */}
           <div className="grid w-full grid-cols-3 items-center lg:hidden">
-
             {/* MENU BUTTON */}
             <button
               type="button"
@@ -154,7 +154,6 @@ export default function Header() {
             className="min-h-0 overflow-hidden px-5"
           >
             <div className="flex flex-col py-2">
-
               {navigation.map((item) => {
                 const active = isActive(item.href);
 
@@ -184,7 +183,6 @@ export default function Header() {
                 <MessageCircle size={17} />
                 Book on WhatsApp
               </Link>
-
             </div>
           </nav>
         </div>
@@ -209,16 +207,15 @@ export default function Header() {
         }
 
         /* HOVER UNDERLINE */
-        .imperial-header .imperial-nav-link:hover
-          .imperial-nav-underline,
-        .imperial-header .imperial-nav-link:focus-visible
+        .imperial-header .imperial-nav-link:hover .imperial-nav-underline,
+        .imperial-header
+          .imperial-nav-link:focus-visible
           .imperial-nav-underline {
           transform: scaleX(1);
         }
 
         /* ACTIVE UNDERLINE ALWAYS VISIBLE */
-        .imperial-header .imperial-nav-link.is-active
-          .imperial-nav-underline {
+        .imperial-header .imperial-nav-link.is-active .imperial-nav-underline {
           transform: scaleX(1);
         }
 
