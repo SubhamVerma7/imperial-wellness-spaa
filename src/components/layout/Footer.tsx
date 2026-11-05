@@ -342,7 +342,7 @@ export default function Footer() {
             </div>
 
             {/* DEVELOPER CREDIT */}
-            <p className="text-[11px] text-white/60">
+            {/* <p className="text-[11px] text-white/60">
               Designed & Developed by{" "}
               <a
                 href="https://www.subhamverma.com/"
@@ -352,7 +352,7 @@ export default function Footer() {
               >
                 Subham Verma
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
       </footer>
