@@ -33,14 +33,14 @@ const contactDetails = [
     title: "Call Us",
     description: "+91 94070 72008",
     action: "Call Now",
-    href: "tel:+919407072008",
+    href: "tel:+919407082960",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
     description: "Connect with us directly",
     action: "Chat on WhatsApp",
-    href: "https://wa.me/919407072008",
+    href: "https://wa.me/919407082960",
   },
   {
     icon: Mail,
@@ -284,7 +284,7 @@ export default function ContactPage() {
           </p>
 
           <Link
-            href="https://wa.me/919407072008"
+            href="https://wa.me/919407082960"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#D9AD4D] px-9 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#090806] transition-all hover:bg-[#F5D88A]"

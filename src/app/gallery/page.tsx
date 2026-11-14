@@ -222,7 +222,7 @@ export default function GalleryPage() {
           </p>
 
           <Link
-            href="https://wa.me/919407072008"
+            href="https://wa.me/919407082960"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#D9AD4D] px-9 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#090806] transition-all hover:bg-[#F5D88A]"

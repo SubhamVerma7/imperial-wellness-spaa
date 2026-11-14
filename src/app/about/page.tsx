@@ -167,7 +167,7 @@ export default function AboutPage() {
             </div>
 
             <Link
-              href="https://wa.me/919407072008"
+              href="https://wa.me/919407082960"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#D9AD4D] px-8 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-[#090806] transition-all hover:bg-[#F5D88A]"
@@ -332,7 +332,7 @@ export default function AboutPage() {
             </div>
 
             <a
-              href="https://wa.me/919407072008"
+              href="https://wa.me/919407082960"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl border border-[#D9AD4D]/20 bg-[#090806] p-6 text-center transition-colors hover:border-[#D9AD4D]/60"
@@ -382,7 +382,7 @@ export default function AboutPage() {
           </p>
 
           <Link
-            href="https://wa.me/919407072008"
+            href="https://wa.me/919407082960"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#D9AD4D] px-9 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#090806] transition-all hover:bg-[#F5D88A]"

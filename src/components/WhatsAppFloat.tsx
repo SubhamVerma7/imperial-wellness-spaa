@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 const WHATSAPP_URL =
-  "https://wa.me/919407072008?text=" +
+  "https://wa.me/919407082960?text=" +
   encodeURIComponent(
     "Hello Imperial Wellness Spa, I would like to know more about your massage services and book an appointment."
   );

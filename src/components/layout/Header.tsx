@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/919407072008?text=" +
+  "https://wa.me/919407082960?text=" +
   encodeURIComponent(
     "Hello Imperial Wellness Spa, I would like to know more about my massage services and book an appointment.",
   );

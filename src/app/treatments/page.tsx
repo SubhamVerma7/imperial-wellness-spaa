@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Explore massage therapies at Imperial Wellness Spaa in Indore, including Swedish, Deep Tissue, Aroma Therapy, Couple Massage and more.",
 };
 
-const WHATSAPP_LINK = "https://wa.me/919407072008";
+const WHATSAPP_LINK = "https://wa.me/919407082960";
 
 const services = [
   {

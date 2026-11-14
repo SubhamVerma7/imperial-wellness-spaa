@@ -184,7 +184,7 @@ export default function PrivacyPolicyPage() {
             <p>
               Our WhatsApp contact number is{" "}
               <a
-                href="https://wa.me/919407072008"
+                href="https://wa.me/919407082960"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#D9AD4D] hover:text-[#F5D88A]"
@@ -343,7 +343,7 @@ export default function PrivacyPolicyPage() {
               <p>
                 Phone / WhatsApp:{" "}
                 <a
-                  href="https://wa.me/919407072008"
+                  href="https://wa.me/919407082960"
                   className="text-[#D9AD4D] hover:text-[#F5D88A]"
                 >
                   +91 94070 72008

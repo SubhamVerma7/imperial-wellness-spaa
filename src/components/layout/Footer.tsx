@@ -6,7 +6,7 @@ import { MapPin, Clock3, Phone, Mail, ArrowUpRight } from "lucide-react";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 
-const phone = "9407072008";
+const phone = "9407082960";
 const email = "Imperialwellnessspa@gmail.com";
 
 const address = [

@@ -478,7 +478,7 @@ export default function TermsAndConditionsPage() {
               <p>
                 Phone / WhatsApp:{" "}
                 <a
-                  href="https://wa.me/919407072008"
+                  href="https://wa.me/919407082960"
                   className="text-[#D9AD4D] hover:text-[#F5D88A]"
                 >
                   +91 94070 72008
