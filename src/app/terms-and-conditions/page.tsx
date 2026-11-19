@@ -28,15 +28,12 @@ function PolicySection({
 }
 
 const services = [
-  ["Regular Full Body Massage", "₹999"],
-  ["Head Massage", "₹799"],
-  ["Foot Massage", "₹899"],
-  ["Swedish Massage", "₹1,800"],
-  ["Deep Tissue Massage", "₹2,000"],
-  ["Aroma Therapy Massage", "₹1,500"],
-  ["Sports Massage", "₹2,500"],
-  ["Couple Massage", "₹3,000"],
-  ["Full Body Scrub with Massage", "₹4,500"],
+  ["Dry / Thai Massage", "30 Min: ₹999", "60 Min: ₹1,499"],
+  ["Oil / Cream Massage", "30 Min: ₹999", "60 Min: ₹1,499"],
+  ["Aroma Massage", "30 Min: ₹1,299", "60 Min: ₹1,999"],
+  ["Deep Tissue Massage", "30 Min: ₹1,299", "60 Min: ₹1,999"],
+  ["Four Hands Massage", "30 Min: ₹1,999", "60 Min: ₹2,999"],
+  ["Couple Massage", "30 Min: ₹1,999", "60 Min: ₹2,999"],
 ];
 
 export default function TermsAndConditionsPage() {
@@ -119,14 +116,14 @@ export default function TermsAndConditionsPage() {
                 <span className="text-right">Listed Price</span>
               </div>
 
-              {services.map(([name, price]) => (
+              {services.map(([name, price30, price60]) => (
                 <div
                   key={name}
                   className="grid grid-cols-2 gap-3 border-t border-white/10 px-4 py-3 text-sm"
                 >
                   <span className="text-white/75">{name}</span>
                   <span className="text-right font-medium text-[#D9AD4D]">
-                    {price}
+                    {price30} / {price60}
                   </span>
                 </div>
               ))}

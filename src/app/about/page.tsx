@@ -20,15 +20,12 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  "Regular Full Body Massage",
-  "Head Massage",
-  "Foot Massage",
-  "Swedish Massage",
+  "Dry / Thai Massage",
+  "Oil / Cream Massage",
+  "Aroma Massage",
   "Deep Tissue Massage",
-  "Aroma Therapy Massage",
-  "Sports Massage",
+  "Four Hands Massage",
   "Couple Massage",
-  "Full Body Scrub with Massage",
 ];
 
 const values = [

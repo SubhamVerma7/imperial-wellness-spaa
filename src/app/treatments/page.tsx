@@ -5,97 +5,42 @@ import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle2,
-  Sparkles,
+  Clock,
   MessageCircle,
+  Sparkles,
 } from "lucide-react";
+import { services } from "@/components/home/Services";
 
 export const metadata: Metadata = {
-  title: "Our Services | Imperial Wellness Spaa Indore",
+  title: "Our Services | Imperial Wellness Spa Indore",
   description:
-    "Explore massage therapies at Imperial Wellness Spaa in Indore, including Swedish, Deep Tissue, Aroma Therapy, Couple Massage and more.",
+    "Explore Dry Thai, Oil Cream, Aroma, Deep Tissue, Four Hands and Couple Massage at Imperial Wellness Spa, Indore. View 30 and 60 minute prices.",
 };
 
-const WHATSAPP_LINK = "https://wa.me/919407082960";
-
-const services = [
-  {
-    name: "Regular Full Body Massage",
-    description: "Full body relaxation massage",
-    price: "₹999/-",
-    image: "/images/services/regular-full-body.jpeg",
-    number: "01",
-  },
-  {
-    name: "Head Massage",
-    description: "Relaxes mind & reduces stress",
-    price: "₹799/-",
-    image: "/images/services/head-massage.jpeg",
-    number: "02",
-  },
-  {
-    name: "Foot Massage",
-    description: "Soothes tired feet",
-    price: "₹899/-",
-    image: "/images/services/foot-massage.png",
-    number: "03",
-  },
-  {
-    name: "Swedish Massage",
-    description: "Relaxes muscles & improves flexibility",
-    price: "₹1,800/-",
-    image: "/images/services/swedish-massage.jpeg",
-    number: "04",
-  },
-  {
-    name: "Deep Tissue Massage",
-    description: "Targets deep muscle tension",
-    price: "₹2,000/-",
-    image: "/images/services/deep-tissue-massage.jpeg",
-    number: "05",
-  },
-  {
-    name: "Aroma Therapy Massage",
-    description: "With comforting aromatic oils",
-    price: "₹1,500/-",
-    image: "/images/services/aroma-therapy.jpeg",
-    number: "06",
-  },
-  {
-    name: "Sports Massage",
-    description: "For muscle recovery & performance",
-    price: "₹2,500/-",
-    image: "/images/services/sports-massage.jpeg",
-    number: "07",
-  },
-  {
-    name: "Couple Massage",
-    description: "Relax together",
-    price: "₹3,000/-",
-    image: "/images/services/couple-massage.jpeg",
-    number: "08",
-  },
-  {
-    name: "Full Body Scrub with Massage",
-    description: "Cleanses, nourishes & refreshes",
-    price: "₹4,500/-",
-    image: "/images/services/full-body-scrub.png",
-    number: "09",
-  },
-];
+const WHATSAPP_LINK = "https://wa.me/919407072008";
 
 function ServiceCard({
   service,
 }: {
   service: (typeof services)[number];
 }) {
+  const bookingMessage = `Hello Imperial Wellness Spa, I would like to enquire about ${service.name}.
+
+30 Minutes: ${service.price30}
+60 Minutes: ${service.price60}
+
+15-minute complimentary shower included.
+
+Please share availability and booking details.`;
+
   const bookingLink = `${WHATSAPP_LINK}?text=${encodeURIComponent(
-    `Hello Imperial Wellness Spaa, I would like to enquire about ${service.name} (${service.price}). Please share the booking details.`
+    bookingMessage
   )}`;
 
   return (
-    <article className="group overflow-hidden rounded-xl border border-[#D9AD4D]/20 bg-[#17130F] shadow-[0_5px_20px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 hover:border-[#D9AD4D]/60 hover:shadow-[0_15px_35px_rgba(0,0,0,0.15)]">
-      {/* SERVICE IMAGE */}
-      <div className="relative h-[210px] overflow-hidden sm:h-[240px] lg:h-[225px] xl:h-[250px]">
+    <article className="group flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-[#D9AD4D]/30 bg-[#100D08] shadow-[0_6px_24px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:border-[#D9AD4D]/70 hover:shadow-[0_15px_35px_rgba(0,0,0,0.2)]">
+      {/* Image */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#17120A]">
         <Image
           src={service.image}
           alt={service.name}
@@ -104,51 +49,97 @@ function ServiceCard({
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#090806]/80 via-transparent to-black/10" />
+        {/* Image overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20" />
 
-        <span className="absolute left-4 top-4 rounded-full border border-[#F5D88A]/50 bg-black/55 px-3 py-1 font-[var(--font-cormorant)] text-sm font-semibold tracking-wider text-[#F5D88A] backdrop-blur-sm">
-          {service.number}
+        {/* Gold bottom accent */}
+        <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-[#D9AD4D] to-transparent" />
+
+        {/* Arrow */}
+        <span className="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full border border-white/30 bg-black/50 text-white backdrop-blur-sm transition-all duration-300 group-hover:border-[#F5D88A] group-hover:bg-[#D9AD4D] group-hover:text-black">
+          <ArrowRight size={16} />
         </span>
 
-        <div className="absolute bottom-4 left-4">
-          <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#F5D88A]">
-            Imperial Wellness Spaa
-          </span>
-        </div>
+        {/* Image title */}
+        {/* <div className="absolute bottom-3 left-4 right-4">
+          <p className="text-[9px] font-semibold uppercase tracking-[0.25em] text-[#F5D88A] sm:text-[10px]">
+            Imperial Wellness Spa
+          </p>
+        </div> */}
       </div>
 
-      {/* SERVICE DETAILS */}
-      <div className="p-4 sm:p-5">
-        <h2 className="min-h-[48px] font-[var(--font-cormorant)] text-xl font-semibold leading-tight text-[#F5D88A] sm:text-2xl">
+      {/* Details */}
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        {/* Service name */}
+        <h2 className="font-[var(--font-cormorant)] text-xl font-bold leading-tight text-[#F5D88A] sm:text-2xl">
           {service.name}
         </h2>
 
-        <p className="mt-1 min-h-[24px] text-xs leading-relaxed text-white/65 sm:text-sm">
+        {/* Description */}
+        <p className="mt-2 min-h-[42px] text-xs leading-relaxed text-white/70 sm:text-sm">
           {service.description}
         </p>
 
+        {/* Complimentary shower */}
+        <div className="mt-3 flex items-center gap-2 rounded-lg border border-[#D9AD4D]/25 bg-[#D9AD4D]/[0.07] px-3 py-2.5">
+          <Sparkles
+            size={14}
+            className="shrink-0 text-[#F5D88A]"
+          />
+
+          <span className="text-[10px] font-medium leading-snug text-[#F5D88A] sm:text-xs">
+            15-Minute Complimentary Shower
+          </span>
+        </div>
+
+        {/* Separator */}
         <div className="my-4 h-px bg-gradient-to-r from-[#D9AD4D]/50 via-[#D9AD4D]/15 to-transparent" />
 
-        <div className="flex items-center justify-between gap-3">
-          <div>
-            <p className="text-[10px] uppercase tracking-widest text-white/50">
-              Starting Price
-            </p>
-            <p className="mt-1 font-[var(--font-cormorant)] text-2xl font-bold text-[#F5D88A] sm:text-3xl">
-              {service.price}
+        {/* Pricing */}
+        <div className="grid grid-cols-2 gap-2.5">
+          {/* 30 Minutes */}
+          <div className="flex min-w-0 flex-col items-center justify-center rounded-xl border border-[#806326]/40 bg-[#080706] px-2 py-3">
+            <div className="flex items-center gap-1.5 text-[9px] font-medium uppercase tracking-wide text-white/60 sm:text-[10px]">
+              <Clock size={12} className="shrink-0 text-[#D9AD4D]" />
+              30 Minutes
+            </div>
+
+            <p className="mt-1.5 whitespace-nowrap font-[var(--font-cormorant)] text-xl font-bold leading-none text-[#F5D88A] sm:text-2xl md:text-3xl">
+              {service.price30}
             </p>
           </div>
 
-          <Link
-            href={bookingLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Enquire about ${service.name} on WhatsApp`}
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#D9AD4D] to-[#F5D88A] px-4 text-xs font-bold text-[#17130F] transition-all duration-300 hover:shadow-[0_0_18px_rgba(217,173,77,0.25)] sm:h-11 sm:px-5 sm:text-sm"
-          >
-            Book Now
-            <ArrowRight size={15} />
-          </Link>
+          {/* 60 Minutes */}
+          <div className="flex min-w-0 flex-col items-center justify-center rounded-xl border border-[#C9A34A]/50 bg-gradient-to-br from-[#211809] to-[#090806] px-2 py-3">
+            <div className="flex items-center gap-1.5 text-[9px] font-medium uppercase tracking-wide text-white/60 sm:text-[10px]">
+              <Clock size={12} className="shrink-0 text-[#D9AD4D]" />
+              60 Minutes
+            </div>
+
+            <p className="mt-1.5 whitespace-nowrap font-[var(--font-cormorant)] text-xl font-bold leading-none text-[#F5D88A] sm:text-2xl md:text-3xl">
+              {service.price60}
+            </p>
+          </div>
+        </div>
+
+        {/* Book button */}
+        <Link
+          href={bookingLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Enquire about ${service.name} on WhatsApp`}
+          className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#B78B35] via-[#E8C66A] to-[#F5D88A] px-4 py-2.5 text-xs font-bold text-[#17130F] transition-all duration-300 hover:shadow-[0_0_18px_rgba(217,173,77,0.25)] sm:text-sm"
+        >
+          <MessageCircle size={16} />
+          Enquire on WhatsApp
+          <ArrowRight size={15} />
+        </Link>
+
+        {/* Brand footer */}
+        <div className="mt-4 flex items-center justify-center gap-2 border-t border-[#D9AD4D]/15 pt-3">
+          <span className="text-[8px] tracking-[0.2em] text-[#B99A57] sm:text-[9px]">
+            IMPERIAL WELLNESS SPA
+          </span>
         </div>
       </div>
     </article>
@@ -162,29 +153,31 @@ export default function TreatmentsPage() {
       <section className="relative flex min-h-[300px] items-center justify-center overflow-hidden sm:min-h-[370px] lg:min-h-[430px]">
         <Image
           src="/images/banner/banner-01.png"
-          alt="Imperial Wellness Spaa"
+          alt="Imperial Wellness Spa"
           fill
           priority
           sizes="100vw"
           className="object-cover object-center"
         />
 
+        {/* Hero overlay */}
         <div className="absolute inset-0 bg-[#090806]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#090806]/40" />
 
         <div className="relative z-10 mx-auto max-w-4xl px-5 py-16 text-center">
           <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.35em] text-[#F5D88A] sm:text-xs">
-            ✦ Imperial Wellness Spaa ✦
+            ✦ Imperial Wellness Spa ✦
           </p>
 
-          <h1 className="font-[var(--font-cormorant)] text-5xl font-bold leading-tight text-[#F5D88A] sm:text-6xl lg:text-7xl">
+          <h1 className="font-[var(--font-cormorant)] text-4xl font-bold leading-tight text-[#F5D88A] sm:text-6xl lg:text-7xl">
             Our Services
           </h1>
 
           <div className="mx-auto my-5 h-px w-24 bg-gradient-to-r from-transparent via-[#D9AD4D] to-transparent" />
 
-          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">
-            Discover our range of massage therapies and choose an experience
-            that suits your relaxation needs.
+          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
+            Discover our signature massage therapies and choose an
+            experience that suits your relaxation and wellness needs.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3 text-xs text-[#F5D88A]/90 sm:gap-6 sm:text-sm">
@@ -192,12 +185,16 @@ export default function TreatmentsPage() {
               <Sparkles size={15} />
               Relaxation
             </span>
+
             <span className="hidden h-1 w-1 rounded-full bg-[#D9AD4D] sm:block" />
+
             <span className="flex items-center gap-2">
               <Sparkles size={15} />
               Rejuvenation
             </span>
+
             <span className="hidden h-1 w-1 rounded-full bg-[#D9AD4D] sm:block" />
+
             <span className="flex items-center gap-2">
               <Sparkles size={15} />
               Wellness
@@ -207,40 +204,49 @@ export default function TreatmentsPage() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="relative border-t border-[#D9AD4D]/20 bg-[#FBF3E5] px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
-        <div className="mx-auto max-w-[1400px]">
-          {/* SECTION HEADING */}
-          <div className="mx-auto mb-9 max-w-2xl text-center sm:mb-12">
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.3em] text-[#A47727]">
+      <section className="relative border-t border-[#D9AD4D]/20 bg-[#FBF3E5] px-4 py-10 sm:px-6 sm:py-14 lg:px-10 lg:py-16">
+        {/* Background decoration */}
+        <div className="pointer-events-none absolute -left-24 top-10 size-64 rounded-full bg-[#D9AD4D]/[0.06] blur-3xl" />
+        <div className="pointer-events-none absolute -right-24 bottom-10 size-64 rounded-full bg-[#A47727]/[0.06] blur-3xl" />
+
+        <div className="relative z-10 mx-auto max-w-[1400px]">
+          {/* Section heading */}
+          <div className="mx-auto mb-8 max-w-2xl text-center sm:mb-10">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.3em] text-[#A47727] sm:text-xs">
               ✦ OUR TREATMENTS ✦
             </p>
 
-            <h2 className="font-[var(--font-cormorant)] text-4xl font-bold leading-tight text-[#17130F] sm:text-5xl">
-              Explore Our Massage Therapies
+            <h2 className="font-[var(--font-cormorant)] text-3xl font-bold leading-tight text-[#17130F] sm:text-4xl lg:text-5xl">
+              Signature Massage Therapies
             </h2>
 
-            <p className="mt-3 text-xs leading-relaxed text-[#5D554A] sm:text-sm">
-              Explore all nine services and their prices. Contact us to enquire
-              about your preferred treatment.
-            </p>
+            <div className="mx-auto mt-4 flex items-center justify-center gap-3">
+              <span className="h-px w-10 bg-[#D9AD4D] sm:w-14" />
+              <span className="text-[#B78B35]">✦</span>
+              <span className="h-px w-10 bg-[#D9AD4D] sm:w-14" />
+            </div>
 
-            <div className="mx-auto mt-5 h-px w-20 bg-[#D9AD4D]" />
+            <p className="mt-3 text-xs leading-relaxed text-[#625647] sm:text-sm">
+              Explore our six carefully selected therapies. Every service
+              includes a complimentary 15-minute shower.
+            </p>
           </div>
 
-          {/* ALL NINE SERVICE CARDS */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-7">
+          {/* Responsive service cards */}
+          <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
             {services.map((service) => (
               <ServiceCard key={service.name} service={service} />
             ))}
           </div>
 
-          {/* SERVICE NOTE */}
-          <div className="mt-10 flex items-start justify-center gap-2 text-center text-[11px] leading-relaxed text-[#5D554A] sm:text-sm">
+          {/* Service note */}
+          <div className="mx-auto mt-8 flex max-w-2xl items-start justify-center gap-2 rounded-xl border border-[#D9AD4D]/20 bg-white/50 p-3 text-center text-[10px] leading-relaxed text-[#625647] sm:mt-10 sm:p-4 sm:text-xs">
             <CheckCircle2
-              size={17}
+              size={16}
               className="mt-0.5 shrink-0 text-[#A47727]"
             />
             <p>
+              Complimentary 15-minute shower included with every therapy.
               Please contact us to confirm availability and booking details.
             </p>
           </div>
@@ -248,38 +254,45 @@ export default function TreatmentsPage() {
       </section>
 
       {/* BOOKING CTA */}
-      <section className="relative overflow-hidden border-t border-[#D9AD4D]/25 bg-[#17130F] px-5 py-14 text-center sm:py-16">
+      <section className="relative isolate overflow-hidden border-t border-[#D9AD4D]/25 px-5 py-14 text-center sm:py-16 lg:py-20">
+        {/* Background image */}
+        <Image
+          src="/images/banner/banner-01.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="-z-20 object-cover object-center"
+        />
+
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 -z-10 bg-[#090806]/85" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+
+        {/* Decorative rings */}
         <div className="pointer-events-none absolute -left-20 -top-24 size-64 rounded-full border border-[#D9AD4D]/10" />
         <div className="pointer-events-none absolute -bottom-28 -right-20 size-72 rounded-full border border-[#D9AD4D]/10" />
- <Image
-          src="/images/banner/banner-01.png"
-          alt="Imperial Wellness Spaa"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+
         <div className="relative z-10 mx-auto max-w-2xl">
           <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#D9AD4D] sm:text-xs">
             Your Wellness Journey Starts Here
           </p>
 
-          <h2 className="font-[var(--font-cormorant)] text-3xl font-bold leading-tight text-[#F5D88A] sm:text-5xl">
+          <h2 className="font-[var(--font-cormorant)] text-3xl font-bold leading-tight text-[#F5D88A] sm:text-4xl lg:text-5xl">
             Ready to Experience Relaxation?
           </h2>
 
-          <p className="mx-auto mt-4 max-w-lg text-xs leading-relaxed text-white/65 sm:text-sm">
-            Get in touch with Imperial Wellness Spaa to enquire about our
-            massage services and booking availability.
+          <p className="mx-auto mt-4 max-w-lg text-xs leading-relaxed text-white/75 sm:text-sm">
+            Get in touch with Imperial Wellness Spa to enquire about
+            your preferred massage therapy and booking availability.
           </p>
 
           <Link
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-7 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#D9AD4D] to-[#F5D88A] px-7 text-sm font-bold text-[#17130F] transition-all duration-300 hover:shadow-[0_0_25px_rgba(217,173,77,0.25)]"
+            className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#B78B35] via-[#E8C66A] to-[#F5D88A] px-6 py-3 text-xs font-bold text-[#17130F] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(217,173,77,0.25)] sm:px-8 sm:text-sm"
           >
-            <MessageCircle size={18} />
+            <MessageCircle size={17} />
             Contact Us on WhatsApp
             <ArrowRight size={16} />
           </Link>
